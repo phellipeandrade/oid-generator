@@ -1,15 +1,13 @@
-const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
+  .BundleAnalyzerPlugin;
 const DashboardPlugin = require('webpack-dashboard/plugin');
 const nodeExternals = require('webpack-node-externals');
 const path = require('path');
 const webpack = require('webpack');
 
 module.exports = {
- // devtool: 'source-map',
-  entry: [
-    'babel-polyfill',
-    './src',
-  ],
+  // devtool: 'source-map',
+  entry: ['./src'],
   output: {
     path: path.resolve('./bin'),
     filename: 'oid',

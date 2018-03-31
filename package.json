@@ -1,6 +1,6 @@
 {
   "name": "oid-generator",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description":
     "A lightweight utility that allows you to easily generate an ObjectId",
   "bin": {
@@ -9,9 +9,9 @@
   "keywords": ["mongodb", "objectid", "generate", "cli"],
   "author": "Phellipe Andrade",
   "bugs": {
-    "url": "https://github.com/phellipeandrade/oid-gen/issues"
+    "url": "https://github.com/phellipeandrade/oid-generator/issues"
   },
-  "homepage": "https://github.com/phellipeandrade/oid-gen/#readme",
+  "homepage": "https://github.com/phellipeandrade/oid-generator/#readme",
   "license": "MIT",
   "scripts": {
     "build":
@@ -52,6 +52,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/phellipeandrade/oid-gen.git"
+    "url": "https://github.com/phellipeandrade/oid-generator.git"
   }
 }

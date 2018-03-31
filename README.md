@@ -1,8 +1,8 @@
-# oid-gen
+# oid-generator
 
 A lightweight utility that allows you to easily generate an ObjectId
 
-this module has no external dependencies and is licensed under the MIT License.
+this module is licensed under the MIT License.
 
 ## Installation & Usage
 

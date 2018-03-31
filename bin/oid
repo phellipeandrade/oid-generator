@@ -46,7 +46,6 @@ var oid =
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-	__webpack_require__(2);
 	module.exports = __webpack_require__(1);
 
 
@@ -56,7 +55,7 @@ var oid =
 
 	'use strict';
 
-	var _clipboardy = __webpack_require__(3);
+	var _clipboardy = __webpack_require__(2);
 
 	var _clipboardy2 = _interopRequireDefault(_clipboardy);
 
@@ -77,12 +76,6 @@ var oid =
 
 /***/ }),
 /* 2 */
-/***/ (function(module, exports) {
-
-	module.exports = require("babel-polyfill");
-
-/***/ }),
-/* 3 */
 /***/ (function(module, exports) {
 
 	module.exports = require("clipboardy");
