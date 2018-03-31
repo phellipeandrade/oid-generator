@@ -62,18 +62,18 @@ var oid =
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var mongoObjectId = function mongoObjectId() {
+	var genObjectId = function genObjectId() {
 	  var timestamp = (new Date().getTime() / 1000 | 0).toString(16);
 	  return timestamp + 'xxxxxxxxxxxxxxxx'.replace(/[x]/g, function () {
 	    return (Math.random() * 16 | 0).toString(16);
 	  }).toLowerCase();
 	};
 
-	var generatedObjectId = mongoObjectId();
+	var generatedObjectId = genObjectId();
 
 	_clipboardy2.default.writeSync(generatedObjectId);
 
-	console.log(generatedObjectId + ' was copied to clipboard!');
+	console.log(generatedObjectId + ' was copied to the clipboard!');
 
 /***/ }),
 /* 2 */

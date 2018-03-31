@@ -9,10 +9,12 @@ this module has no external dependencies and is licensed under the MIT License.
 ### install
 
 ```sh
-npm install -g oid-gen
+npm install -g oid-generator
 ```
 
 ### usage
+
+just run _oid_ from your terminal, and an ObjectId will be shown and copied to the clipboard.
 
 ```sh
 oid
