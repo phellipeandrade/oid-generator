@@ -1,16 +1,12 @@
 {
-  "name": "objectid-gen",
-  "version": "1.0.0",
-  "description": "A lightweight utility that allows you to easily generate an ObjectId",
+  "name": "oid-generator",
+  "version": "1.0.1",
+  "description":
+    "A lightweight utility that allows you to easily generate an ObjectId",
   "bin": {
     "oid": "./bin/oid"
   },
-  "keywords": [
-    "mongodb",
-    "objectid",
-    "generate",
-    "cli"
-  ],
+  "keywords": ["mongodb", "objectid", "generate", "cli"],
   "author": "Phellipe Andrade",
   "bugs": {
     "url": "https://github.com/phellipeandrade/oid-gen/issues"
@@ -18,7 +14,8 @@
   "homepage": "https://github.com/phellipeandrade/oid-gen/#readme",
   "license": "MIT",
   "scripts": {
-    "build": "babel-node ./scripts/emptyFolder && webpack --config ./webpack.prod.config.js",
+    "build":
+      "babel-node ./scripts/emptyFolder && webpack --config ./webpack.prod.config.js",
     "test": "jest",
     "coverage": "npm test -- --coverage"
   },
@@ -43,6 +40,7 @@
     "fs-extra": "^0.30.0",
     "jest": "^22.3.0",
     "regenerator-runtime": "^0.11.1",
+    "uglifyjs-webpack-plugin": "^1.2.4",
     "webpack": "^1.13.2",
     "webpack-bundle-analyzer": "^2.10.0",
     "webpack-dashboard": "^1.1.1",

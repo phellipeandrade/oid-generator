@@ -2,31 +2,33 @@ const webpack = require('webpack');
 const webpackSettings = require('./webpack.config');
 
 const optimizingPlugins = [
-  new webpack.DefinePlugin({
-    'process.env.NODE_ENV': '"production"',
-  }),
+  new webpack.DefinePlugin({ 'process.env.NODE_ENV': '"production"' }),
   new webpack.optimize.OccurrenceOrderPlugin(),
+  new webpack.BannerPlugin('#!/usr/bin/env node', { raw: true }),
   new webpack.optimize.UglifyJsPlugin({
-    comments: false,
+    minimize: true,
+    sourceMap: false,
+    mangle: { toplevel: true },
+    uglifyOptions: {
+      mangle: true,
+      toplevel: true,
+      keep_classnames: false,
+      keep_fnames: false,
+    },
     compress: {
-      unused: true,
-      dead_code: true,
-      warnings: false,
-      drop_debugger: true,
-      conditionals: true,
-      evaluate: true,
-      drop_console: true,
-      sequences: true,
-      booleans: true,
+      passes: 2,
+    },
+    output: {
+      beautify: false,
+      preamble: '/* uglified */',
     },
   }),
   new webpack.optimize.DedupePlugin(),
-  new webpack.BannerPlugin('#!/usr/bin/env node', { raw: true }),
 ];
 
 webpackSettings.plugins = optimizingPlugins;
 webpackSettings.entry = webpackSettings.entry.filter((entryName) => {
-  return (entryName.indexOf('hot/dev-server') === -1);
+  return entryName.indexOf('hot/dev-server') === -1;
 });
 
 module.exports = webpackSettings;
