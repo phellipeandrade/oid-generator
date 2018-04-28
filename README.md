@@ -1,5 +1,7 @@
 # oid-generator
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/phellipeandrade/oid-generator.svg)](https://greenkeeper.io/)
+
 A lightweight utility that allows you to easily generate an ObjectId
 
 this module is licensed under the MIT License.
