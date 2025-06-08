@@ -1,6 +1,6 @@
 # oid-generator
 
-A lightweight utility that allows you to easily generate an ObjectId
+A TypeScript-based utility that easily generates an ObjectId
 
 this module is licensed under the MIT License.
 
