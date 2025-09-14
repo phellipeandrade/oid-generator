@@ -19,7 +19,7 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "test": "jest",
+    "test": "npm run build && jest",
     "coverage": "npm test -- --coverage"
   },
   "dependencies": {
